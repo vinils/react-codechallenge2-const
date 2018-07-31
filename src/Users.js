@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 import User from './Users/User'
-import Head from './Users/Head'
+import Header from './Users/Header'
 
 const Map = (users, onChangeClick, onDeleteClick) => {
     return (
@@ -27,18 +27,14 @@ const Users = props => {
 
     return (
         <div className="table">
-            <Head/>
+            <Header/>
             {props.children}
         </div>
     ); 
 };
 
 Users.propTypes = {
-    props: PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        email: PropTypes.string.isRequired,
-        city: PropTypes.string
-    }).isRequired
+    children: PropTypes.array.isRequired
 }
 
 export {Users, Map}

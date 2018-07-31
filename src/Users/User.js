@@ -28,13 +28,11 @@ const User = props => {
 };
 
 User.propTypes = {
-    props: PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        email: PropTypes.string.isRequired,
-        city: PropTypes.string.isRequired,
-        onDeleteClick: PropTypes.func,
-        onChangedClick: PropTypes.func
-    }).isRequired
+    name: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+    city: PropTypes.string.isRequired,
+    onDeleteClick: PropTypes.func,
+    onChangedClick: PropTypes.func
 }
 
 export default User;

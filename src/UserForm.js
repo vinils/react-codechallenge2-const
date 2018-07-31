@@ -42,14 +42,12 @@ const UserForm = props => {
 };
 
 UserForm.propTypes = {
-    props: PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        email: PropTypes.string.isRequired,
-        city: PropTypes.string.isRequired,
-        onClear: PropTypes.func.isRequired,
-        onSubmit: PropTypes.func.isRequired,
-        onChange: PropTypes.func.isRequired
-    }).isRequired
+    name: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+    city: PropTypes.string.isRequired,
+    onClear: PropTypes.func.isRequired,
+    onSubmit: PropTypes.func.isRequired,
+    onChange: PropTypes.func.isRequired
 }
 
 export default UserForm;
